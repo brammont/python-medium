@@ -1,31 +1,16 @@
-set_countries = {'col', 'mex', 'bol'}
+set_a ={'col','mex','bol'}
+set_b ={'pe','bol'}
+# operation sets
+#ad
+set_c = set_a.union(set_b)
+print(set_c) 
+print(set_a | set_b)
+#intersection
+set_c = set_a.intersection(set_b)
+print(set_c) 
+print(set_a | set_b)
+#difference
+set_c = set_a.difference(set_b)
+print(set_c) 
+print(set_a | set_b)
 
-size = len(set_countries)
-print(size)
-
-print('col' in set_countries)
-print('pe' in set_countries)
-
-# add
-set_countries.add('pe')
-print(set_countries)
-set_countries.add('pe')
-print(set_countries)
-
-# update
-set_countries.update({'ar', 'ecua', 'pe'})
-print(set_countries)
-
-# remove
-
-set_countries.remove('col')
-print(set_countries)
-
-set_countries.remove('ar')
-set_countries.discard('arg')
-print(set_countries)
-set_countries.add('arg')
-print(set_countries)
-set_countries.clear()
-print(set_countries)
-print(len(set_countries))
