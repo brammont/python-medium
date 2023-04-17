@@ -1,12 +1,19 @@
-numbers = [35, 16, 10, 34, 37, 25]
+print('Hola, Platzinauta') 
+#Agregando una funcion print
 
-even_numbers = []
-for number in numbers:
-  if number % 2 == 0:
-    even_numbers.append(number)
-print('v1 =>', even_numbers)
+def greeting(text):
+# Aquí estamos agregando una funcion y su sintaxis.
+# Junto con sus parametros en este caso 'text'
+  print('This is my print')
+  print('This is my print 2')
+  print(text)
 
-# Ahora usando List Comprehension 👇
-even_numbers_v2 = [number for number in numbers if number % 2 == 0]
-
-print('v2 =>', even_numbers_v2)
+greeting('parametro')
+#  Una manera de llamar a la función
+greeting('Texto ejemplo, llamando a la función desde su parametro. ' * 2)
+#Aquí otro ejemplo con suma
+def suma(a,b):
+  print(a + b)
+#  Imprimimos el resultado a consola
+suma(200, 100) 
+# llamamos a la función con parametros
